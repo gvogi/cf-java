@@ -1,8 +1,8 @@
-package gr.aueb.cf.ch16.Model;
+package gr.aueb.cf.ch15.bank2.Model;
 
-import gr.aueb.cf.ch16.exceptions.InsufficientAmountException;
-import gr.aueb.cf.ch16.exceptions.InsufficientBalanceException;
-import gr.aueb.cf.ch16.exceptions.SsnNotValidException;
+import gr.aueb.cf.ch15.bank2.exceptions.InsufficientAmountException;
+import gr.aueb.cf.ch15.bank2.exceptions.InsufficientBalanceException;
+import gr.aueb.cf.ch15.bank2.exceptions.SsnNotValidException;
 
 /**
  * Defines an Account with business Logic

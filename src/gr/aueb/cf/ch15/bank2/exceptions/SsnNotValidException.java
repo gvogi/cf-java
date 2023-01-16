@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch16.exceptions;
+package gr.aueb.cf.ch15.bank2.exceptions;
 
 public class SsnNotValidException extends Exception {
     private static final long serialVersionUID = 1L;

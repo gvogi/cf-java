@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch15.bank2.Model;
+package gr.aueb.cf.ch15.seminarinherit;
 
 public class IdentifiableEntity {
     private Long id;

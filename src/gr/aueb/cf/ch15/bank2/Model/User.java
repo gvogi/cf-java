@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch16.Model;
+package gr.aueb.cf.ch15.bank2.Model;
 
 public class User {
     private String firstname;
