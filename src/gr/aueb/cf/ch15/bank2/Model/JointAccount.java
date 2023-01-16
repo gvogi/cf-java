@@ -14,8 +14,8 @@ public class JointAccount extends IdentifiableEntity {
     }
 
     public JointAccount(User firstHolder, User secondHolder, String iban, double balance) {
-        this.firstHolder = firstHolder;
-        this.secondHolder = secondHolder;
+        this.firstHolder = new User(firstHolder);
+        this.secondHolder = new User(secondHolder);
         this.iban = iban;
         this.balance = balance;
     }
@@ -24,8 +24,16 @@ public class JointAccount extends IdentifiableEntity {
         return new User(firstHolder);
     }
 
+    public void setFirstHolder(User firstHolder) {
+        this.firstHolder = new User(firstHolder);
+    }
+
     public User getSecondHolder() {
         return new User(secondHolder);
+    }
+
+    public void setSecondHolder(User secondHolder) {
+        this.secondHolder = new User(secondHolder);
     }
 
     public String getIban() {
@@ -44,6 +52,11 @@ public class JointAccount extends IdentifiableEntity {
         this.balance = balance;
     }
 
+    /**
+     * Deposits a certain amount of money into user-account
+     * @param amount
+     * @throws InsufficientAmountException
+     */
     public void deposit(double amount) throws InsufficientAmountException {
         try {
             if (amount < 0) {

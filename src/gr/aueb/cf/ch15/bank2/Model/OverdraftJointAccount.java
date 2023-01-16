@@ -13,14 +13,14 @@ public class OverdraftJointAccount extends JointAccount {
     }
 
     @Override
-    public void withdraw(double amount, String ssn) throws InsufficientBalanceException, SsnNotValidException {
+    public void withdraw(double amount, String ssn) throws SsnNotValidException {
         try {
             if (!isSsnValid(ssn)) {
                 throw new SsnNotValidException(ssn);
             }
             setBalance(getBalance() - amount);
         }catch (SsnNotValidException e) {
-            System.err.println("Error: withdrawal");
+            System.err.println("Error: in Ssn" + "\n" + e);
             throw e;
         }
     }
