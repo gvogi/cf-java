@@ -29,7 +29,7 @@ public interface IMobileContactDAO {
     /**
      * Removes an {@link MobileContact} instance from data source.
      *
-     * @param phoneNumber the {@link MobileContact#phoneNumber}
+     * @param phoneNumber the {@link MobileContact} phoneNumber
      *              of the instance needed to be removed.
      */
     void delete(String phoneNumber);
@@ -38,7 +38,7 @@ public interface IMobileContactDAO {
     /**
      * Returns a {@link MobileContact} based on the input id.
      *
-     * @param id the {@link MobileContact#id} of the instance to be returned.
+     * @param id the {@link MobileContact} id of the instance to be returned.
      *
      * @return the resulting {@link MobileContact}
      */
@@ -46,7 +46,7 @@ public interface IMobileContactDAO {
     /**
      * Returns a {@link MobileContact} based on the input phoneNumber.
      *
-     * @param phoneNumber the {@link MobileContact#phoneNumber} of the instance to be returned.
+     * @param phoneNumber the {@link MobileContact} phoneNumber of the instance to be returned.
      *
      * @return the resulting {@link MobileContact}
      */
