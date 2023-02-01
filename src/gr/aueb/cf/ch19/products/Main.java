@@ -1,7 +1,6 @@
 package gr.aueb.cf.ch19.products;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
